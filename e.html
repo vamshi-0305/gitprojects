@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function add()
+    {
+    let a=parseInt(document.getElementById("sub1").value);
+    let b=parseInt(document.getElementById("sub2").value);
+    var k=a+b;
+    var c=document.getElementById("sub3").value;
+    switch(c)
+    {
+        case'+':
+        k=a+b;
+        break;
+        case'-':
+        k=a-b;
+        break;
+        case'*':
+        k=a*b;
+        break;
+        case'/':
+        k=a/b;
+        break;
+
+    }
+    document.getElementById("sub4").value=k;
+    }
+    </script> 
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <label for="sub1">enter a number</label>
+<input type="text"id="sub1"class="form-control">
+<label for="sub2">enter a number</label>
+<input type="text"id="sub2"class="form-control">
+<label for="sub3">enter an operation</label>
+<input type="text"id="sub3"class="form-control">
+<br>
+<label for="sub4">enter answer</label>
+<input type="text"id="sub4"class="form-control">
+
+
+<button onclick="add()"class="btn btn-outline-dark">submit</button>
+
+</div>    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+/*var employee1={id:1,dept:hkhk,salary:100000};
+var employee2={id:2,dept:egreghk,salary:120000};
+var employee3={id:3,dept:hhthk,salary:90000};
+var employees{1:employee1,2:employee2,3:employee3};
+var employeearray=[employee1,employee2,employee3];*/
+function submitdetails(){
+    var n1=document.getElementById("s1n").value;
+    var y1=document.getElementById("s1y").value;
+    var json1={name:n1,year:y1}; 
+    var n2=document.getElementById("s2n").value;
+    var y2=document.getElementById("s2y").value;
+    var json2={name:n2,year:y2}; 
+    document.write("<table border='2'width=50%>");
+    document.write("<tr><td>"+json1.name+"</td><td>"+json1.year+"</td></tr>");
+    document.write("<table border='2'width=50%>");
+    document.write("<tr><td>"+json2.name+"</td><td>"+json2.year+"</td></tr>");
+    document.write("</table>");
+}
+
+
+</script>
+
+
+
+
+
+</head>
+<body>
+ <h1>student details</h1> 
+   <h3>student1</h3>
+  <input type="text"placeholder="name"id="s1n">
+  <input type="text"placeholder="year"id="s1y">
+  
+   <h2>student2</h2>
+   <input type="text"placeholder="name"id="s2n">
+  <input type="text"placeholder="year"id="s2y">
+  
+ 
+<button onclick="submitdetails()">submit</button>
+</body>
+</html>
